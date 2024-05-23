@@ -1,0 +1,25 @@
+<script>
+    function add(a,b){
+        document.getElementById('res').innerHTML=Number(a)+Number(b);
+    }
+    function sub(a,b){
+        document.getElementById('res').innerHTML=a-b;
+    }
+    function multipy(a,b){
+        document.getElementById('res').innerHTML=a*b;
+    }
+    function div(a,b){
+        document.getElementById('res').innerHTML=a/b;
+    }
+</script>
+
+<center>
+    <h1>Calculator App</h1>
+No1: <input type="number" id="no1"></br>
+No2: <input type="number" id="no2"></br></br>
+<p id="res"></p>
+<button onclick="add(no1.value,no2.value)">ADDITION</button></br>
+<button onclick="sub(no1.value,no2.value)">SUBTRACTION</button></br>
+<button onclick="multipy(no1.value,no2.value)">MULTIPLY</button></br>
+<button onclick="div(no1.value,no2.value)">DIVISON</button>
+</center>

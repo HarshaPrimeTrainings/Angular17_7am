@@ -1,0 +1,30 @@
+<script>
+function validate(){
+    var user = document.getElementById('usr').value;
+    if(user == null || user == ''){
+        document.getElementById('usererr').innerHTML="username is mandotory";
+        document.getElementById('usr').setAttribute("style","border-color:red");
+        alert('username should not be null');
+        return false;
+    }
+
+}
+
+function errout(){
+    var user = document.getElementById('usr').value;
+    if(user == null || user == ''){
+        document.getElementById('usererr').innerHTML="username is mandotory";
+        document.getElementById('usr').setAttribute("style","border-color:red");
+        return false;
+    }
+}
+
+</script>
+
+<form action="http://127.0.0.1:5500/success.html" onsubmit="return validate()">
+    <p id="usererr" style="color: red;"></p>
+Username: <input type="text" name="usr" id="usr" onblur="errout()">
+Password: <input type="password" name="pwd">
+<input type="submit">
+</form>
+
