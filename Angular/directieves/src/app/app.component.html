@@ -1,0 +1,15 @@
+<h1>App Component</h1>
+
+<input type="text" #age>
+<button (click)="validateAge(age.value)">CLICK</button>
+<div *ngIf="userage>18">Your are Eligible to Vote</div>
+
+<ul *ngFor="let temp of items" >
+    <li>{{temp}}</li>
+</ul>
+
+<div [ngSwitch]="choice">
+<ng-container *ngSwitchCase="'dog'"><h1>PET ANIMAL</h1></ng-container>
+<ng-container *ngSwitchCase="'tiger'"><h1>WILD ANIMAL</h1></ng-container>
+<ng-container *ngSwitchCase="'turtle'"><h1>AQUA ANIMAL</h1></ng-container>
+</div>
