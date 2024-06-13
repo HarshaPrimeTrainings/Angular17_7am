@@ -1,0 +1,4 @@
+<h1 >App Component</h1>
+<input type="text" #inputmsg><button (click)="setMessage(inputmsg.value)">INPUT</button>
+<demo-comp *ngIf="display" [msg]="data">Demo content</demo-comp>
+<button (click)="setDisplay()">CLICK</button>
