@@ -1,0 +1,18 @@
+<h1 >App Component</h1>
+<button (click)="displayUsers()">LIST USERS</button>
+<table *ngIf="users.length>0">
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>EMAIL</th>
+    <th>ADDRESS</th>
+</tr>
+<tr *ngFor="let usr of users">
+    <td>{{usr.id}}</td>
+    <td>{{usr.name}}</td>
+    <td>{{usr.email}}</td>
+    <td>{{usr.address.city}}</td>
+</tr>
+</table>
+
+
