@@ -1,0 +1,14 @@
+
+<h1 style="margin: auto; align-items: center;">Admin DashBoard</h1>
+<header>
+<nav>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/inbox">INBOX</a>
+    <a routerLink="/sent">SENT</a>
+    <button (click)="logout()">LOGOUT</button>
+</nav>
+
+</header>
+<div class="main-content">
+<router-outlet></router-outlet>
+</div>

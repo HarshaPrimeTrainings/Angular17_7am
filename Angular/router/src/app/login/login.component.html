@@ -1,0 +1,5 @@
+<form #loginForm="ngForm" (submit)="getCredentials(loginForm.value)">
+    USERNAME: <input type="text"  name="username" ngModel><br>
+    PASSWORD: <input type="text"  name="password" ngModel><br>
+    <input type="submit" value="LOGIN">
+</form>

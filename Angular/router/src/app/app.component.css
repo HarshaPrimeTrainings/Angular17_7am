@@ -1,0 +1,30 @@
+input.ng-touched.ng-invalid{
+    border-color: red;
+}
+h1{
+    text-align: center;
+}
+header{
+    padding: 30px;
+    background-color: teal;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.main-content{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-content{
+    margin: auto;
+    
+}
